@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "NEXORA",
+    "slug": "nexora-reminders",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "android": {
+      "package": "com.nexora.reminders",
+      "permissions": [
+        "RECORD_AUDIO",
+        "POST_NOTIFICATIONS",
+        "SCHEDULE_EXACT_ALARM",
+        "USE_EXACT_ALARM",
+        "VIBRATE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#70B7FF",
+          "defaultChannel": "nexora-reminders"
+        }
+      ],
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Allow NEXORA to use your microphone to create reminders by voice.",
+          "speechRecognitionPermission": "Allow NEXORA to convert your speech into reminder text."
+        }
+      ]
+    ]
+  }
+}
